@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>츄츄~ 찍어! (하나만 골라!) — 캐주얼 두뇌 퍼즐</title>
+<meta name="description" content="어르신·아이 모두를 위한 귀여운 두뇌 퍼즐 + 미니게임. 같은 그림을 찾아 누르고, 코인을 모아 친구를 데려와요. 개인정보처리방침.">
+<style>
+  :root{
+    --sky:#9AD7FF; --lav:#BFB4FF; --pink:#FFC2E0;
+    --ink:#3a2f55; --soft:#7a6f95; --card:#ffffff; --gold:#F7B500;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;
+    color:var(--ink);line-height:1.7;background:#f6f3ff;-webkit-font-smoothing:antialiased}
+  a{color:#7b5cff}
+  .hero{background:linear-gradient(160deg,var(--sky),var(--lav) 55%,var(--pink));
+    text-align:center;padding:54px 20px 64px;position:relative;overflow:hidden}
+  .hero .spark{position:absolute;color:#fff7c9;opacity:.85;font-size:22px}
+  .icon{width:124px;height:124px;border-radius:28px;box-shadow:0 14px 34px rgba(91,59,134,.32);background:#fff}
+  h1{font-size:30px;margin:18px 0 4px;letter-spacing:-.5px}
+  .sub{color:#5b4b86;font-weight:600;font-size:15px}
+  .badges{margin-top:16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+  .badge{background:rgba(255,255,255,.78);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;color:#5b4b86}
+  .wrap{max-width:760px;margin:0 auto;padding:0 18px}
+  section{margin:38px auto}
+  h2{font-size:21px;margin:0 0 14px;display:flex;align-items:center;gap:8px}
+  .feats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .feat{background:var(--card);border-radius:18px;padding:16px;box-shadow:0 4px 16px rgba(120,110,160,.10)}
+  .feat b{display:block;margin-bottom:2px}
+  .feat span{color:var(--soft);font-size:14px}
+  .shots{display:flex;gap:12px;overflow-x:auto;padding:6px 2px 14px;scroll-snap-type:x mandatory}
+  .shots img{height:420px;border-radius:20px;box-shadow:0 8px 24px rgba(120,110,160,.22);scroll-snap-align:center;flex:0 0 auto}
+  .note{background:#fff;border-radius:18px;padding:18px 20px;box-shadow:0 4px 16px rgba(120,110,160,.10)}
+  .policy{background:#fff;border-radius:20px;padding:26px 22px;box-shadow:0 6px 20px rgba(120,110,160,.12)}
+  .policy h3{font-size:16px;margin:20px 0 6px}
+  .policy h4{font-size:14px;color:var(--soft);margin:18px 0 4px;font-weight:700}
+  .policy p,.policy li{font-size:14.5px;color:#4a4060}
+  .policy ul{margin:6px 0 6px 20px}
+  .meta{font-size:13px;color:var(--soft)}
+  .divider{height:1px;background:#eee;margin:26px 0}
+  footer{text-align:center;color:var(--soft);font-size:13px;padding:30px 18px 50px}
+  @media(max-width:520px){.feats{grid-template-columns:1fr}.shots img{height:360px}h1{font-size:26px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="spark" style="top:24px;left:14%">✦</span>
+  <span class="spark" style="top:60px;right:18%;font-size:16px">✦</span>
+  <span class="spark" style="bottom:30px;left:22%;font-size:14px">✦</span>
+  <img class="icon" src="img/icon.png" alt="츄츄~ 찍어! 아이콘">
+  <h1>🐥 츄츄~ 찍어!</h1>
+  <div class="sub">하나만 골라! · chuchu~ Pick One!</div>
+  <div class="badges">
+    <span class="badge">두뇌 퍼즐 + 미니게임</span>
+    <span class="badge">전체 이용가</span>
+    <span class="badge">어르신·아이 친화</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <h2>✨ 이런 게임이에요</h2>
+    <div class="feats">
+      <div class="feat"><b>🔎 같은 그림 찾기</b><span>모드를 골라 다른 하나를 눌러요. 규칙은 단순, 재미는 쏠쏠.</span></div>
+      <div class="feat"><b>🎮 미니게임 5종</b><span>과일 모으기·합치기·블록 끼우기·뒤뚱 달리기·계단 오르기.</span></div>
+      <div class="feat"><b>🪙 코인으로 친구 모으기</b><span>플레이로 모은 코인으로 귀여운 친구를 데려와요. 뽑기·결제 압박 없음.</span></div>
+      <div class="feat"><b>👵🧒 누구나 쉽게</b><span>큰 버튼·큰 글씨, 소리 끄기 설정, 멀미 방지 모션 옵션.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>📱 화면</h2>
+    <div class="shots">
+      <img src="img/s1.png" alt="홈"><img src="img/s2.png" alt="퍼즐 플레이">
+      <img src="img/s3.png" alt="과일 모으기"><img src="img/s4.png" alt="친구 고르기">
+      <img src="img/s5.png" alt="상점">
+    </div>
+  </section>
+
+  <section>
+    <div class="note">🚀 <b>곧 Google Play에 출시 예정이에요.</b> 작은 배너 광고로 무료 제공하며,
+    원하시면 <b>‘광고 없애기’</b> 한 번으로 광고를 끌 수 있어요(가챠·보석·코인 판매 없음).</div>
+  </section>
+
+  <section id="privacy">
+    <h2>🔒 개인정보처리방침 / Privacy Policy</h2>
+    <div class="policy">
+      <p class="meta">최종 수정일 Last updated: 2026-06-15 · 앱 츄츄~ 찍어!(하나만 골라!) · 개발자 ai.Paul · 문의 <a href="mailto:systrade0625@gmail.com">systrade0625@gmail.com</a></p>
+
+      <h3>한국어</h3>
+      <p>본 방침은 <b>광고(Google AdMob)와 인앱결제가 포함된 버전</b> 기준입니다.</p>
+      <h4>1. 수집·이용하는 정보</h4>
+      <p>본 앱은 이용자를 직접 식별하는 개인정보(이름·이메일·전화번호·정밀위치)를 <b>수집하지 않습니다.</b> 무료 제공을 위한 광고 노출 과정에서 광고 제공자(Google AdMob)가 <b>광고 식별자(Android 광고 ID/iOS IDFA)·기기 종류·OS·대략적 지역·광고 상호작용 정보</b>를 자동으로 처리할 수 있으며, 이는 광고 송출·빈도 제한·부정 클릭 방지·성과 측정 목적으로만 사용됩니다. (Google 광고 정책: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>) ‘광고 없애기’를 구매하면 광고 표시와 관련 식별자 처리가 중단됩니다.</p>
+      <h4>2. 게임 데이터의 저장</h4>
+      <p>게임 진행 정보(코인·보유 캐릭터·구매 항목·최고 점수·기록)는 <b>이용자의 기기 안에만</b> 저장됩니다. 개발자 서버로 전송되지 않으며, 앱을 삭제하면 함께 삭제됩니다.</p>
+      <h4>3. 제3자 서비스</h4>
+      <ul>
+        <li><b>Google AdMob</b>(광고 송출) — 광고 식별자 등 처리. <a href="https://policies.google.com/privacy">정책</a></li>
+        <li><b>Google Play 결제</b>(인앱결제) — 결제는 스토어가 처리하며, 본 앱은 카드·계좌 정보를 받지도 저장하지도 않습니다.</li>
+      </ul>
+      <h4>4. 결제(인앱 구매)</h4>
+      <p>인앱 구매는 ‘광고 없애기’ <b>단 한 가지</b>(비소모성)입니다. 게임 내 통화 ‘코인’은 플레이로만 획득하며 판매·환급되지 않습니다(뽑기·보석 없음). 미성년자는 보호자 동의 및 스토어의 가족 결제 보호 기능 사용을 권장합니다.</p>
+      <h4>5. 아동의 개인정보</h4>
+      <p>전체 이용가이며 아동을 직접 마케팅 대상으로 하지 않습니다. 광고는 <b>비개인화/연령 적합 모드</b>로 요청해 아동에게 맞춤광고가 노출되지 않도록 합니다.</p>
+      <h4>6. 이용자의 선택권</h4>
+      <p>기기 설정에서 광고 ID를 재설정/삭제할 수 있고, ‘광고 없애기’ 구매로 광고를 완전히 끌 수 있습니다.</p>
+      <h4>7. 방침 변경 · 8. 문의</h4>
+      <p>정책 변경 시 본 페이지와 최종 수정일을 갱신합니다. 문의: <a href="mailto:systrade0625@gmail.com">systrade0625@gmail.com</a></p>
+
+      <div class="divider"></div>
+
+      <h3>English</h3>
+      <p>This policy covers the build <b>with ads (Google AdMob) and in-app purchases</b>.</p>
+      <h4>1. Information We Collect</h4>
+      <p>We do not collect directly identifying personal information (name, email, phone, precise location). To serve ads (which keep the app free), Google AdMob may automatically process an <b>advertising identifier (Android Advertising ID / iOS IDFA), device type, OS, approximate region, and ad-interaction data</b>, used solely for ad delivery, frequency capping, fraud prevention, and performance measurement. Buying “Remove Ads” stops ads and the related identifier processing.</p>
+      <h4>2. Game Data Storage</h4>
+      <p>Game progress (coins, owned characters, purchases, high scores) is stored <b>only on your device</b>. It is never sent to our servers and is deleted when you uninstall.</p>
+      <h4>3. Third-Party Services</h4>
+      <ul><li><b>Google AdMob</b> (ads) — <a href="https://policies.google.com/privacy">privacy</a></li>
+      <li><b>Google Play Billing</b> — handled by the store; we never receive payment-instrument details.</li></ul>
+      <h4>4. In-App Purchases</h4>
+      <p>Exactly ONE purchase: “Remove Ads” (non-consumable). The single currency “coins” is earned only by play, never sold, no cash-out value (no gems, no gacha).</p>
+      <h4>5. Children’s Privacy</h4>
+      <p>Rated for all ages; not directed at children for marketing. Ads are requested in non-personalized / age-appropriate mode.</p>
+      <h4>6–8. Your Choices · Changes · Contact</h4>
+      <p>You can reset/delete your advertising ID in device settings, or buy “Remove Ads” to turn ads off. We update this page on changes. Contact: <a href="mailto:systrade0625@gmail.com">systrade0625@gmail.com</a></p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 ai.Paul · 츄츄~ 찍어! (하나만 골라!) · 문의 <a href="mailto:systrade0625@gmail.com">systrade0625@gmail.com</a>
+</footer>
+
+</body>
+</html>
